@@ -5,6 +5,20 @@
 <section class="collection wrap" id="collection"><div class="sectionhead"><div><div class="label">CATALOGUE / 10 WORKS</div><h2>Explore the collection</h2></div><div class="filters"><button class="filter active" data-filter="all">ALL</button><button class="filter" data-filter="kingdom">KINGDOMS</button><button class="filter" data-filter="atlas">ATLASES</button></div></div><div class="grid" id="grid"></div></section>
 <section class="process" id="process"><div class="wrap"><div class="label">ORDERING / SIMPLE BY DESIGN</div><div class="process-grid"><div class="process-title"><h2>From archive<br>to your wall.</h2></div><div class="step"><b>01</b><h3>Choose</h3><p>Select one or more works from the archive. Every public image is a reduced, permanently watermarked preview.</p></div><div class="step"><b>02</b><h3>Order</h3><p>Create your order and pay by Interac e-Transfer. Your unique order number ties the transfer to your purchase.</p></div><div class="step"><b>03</b><h3>Print</h3><p>Payment is manually verified before production. Each piece is printed to order with an estimated 3–6 week delivery window.</p></div></div></div></section>
 <section class="closing"><div class="wrap"><div class="closing-card"><div class="label">ATLAS ARCHIVE</div><h2>Find the one<br>you'll get lost in.</h2><a class="primary dark" href="#collection">BROWSE ALL WORKS <span>↑</span></a><div class="bigmark">A</div></div></div></section></main>
-<footer><div class="wrap footer-grid"><div class="brand"><span class="mark">A</span><span>ATLAS <b>ARCHIVE</b></span></div><div>Large-format knowledge maps<br>Printed to order in Canada</div><div>Payment by Interac e-Transfer<br>Estimated delivery: 3–6 weeks</div><div>© 2026 Atlas Archive<br><a href="admin.html" style="color:#c7ff3d">Owner tools →</a></div></div></footer>
+<footer><div class="wrap footer-grid"><div class="brand"><span class="mark">A</span><span>ATLAS <b>ARCHIVE</b></span></div><div>Large-format knowledge maps<br>Printed to order in Canada</div><div>Payment by Interac e-Transfer<br>Estimated delivery: 3–6 weeks</div><div>© 2026 Atlas Archive<br><a href="#" onclick="ownerLogin(event)" style="color:#c7ff3d">Owner tools →</a></div></div></footer>
 <div class="scrim" id="scrim" onclick="closeCart()"></div><aside class="drawer" id="drawer"><div class="drawer-head"><div><div class="label">YOUR SELECTION</div><h2>Order</h2></div><button class="x" onclick="closeCart()">×</button></div><div id="cartItems"></div><div id="checkout"></div></aside>
-<script src="products.js"></script><script src="store.js"></script></body></html>
+<script src="products.js"></script><script src="store.js"></script><script>
+function ownerLogin(e){
+  e.preventDefault();
+  const u=prompt('Owner username');
+  if(u===null)return;
+  const p=prompt('Owner password');
+  if(p===null)return;
+  const enc=new TextEncoder();
+  crypto.subtle.digest('SHA-256',enc.encode(u+'|'+p)).then(buf=>{
+    const hash=[...new Uint8Array(buf)].map(b=>b.toString(16).padStart(2,'0')).join('');
+    if(hash==='d6c6942ac86ef1caf7b2cd12338ec8a2450c83e04eb704cc570b45d3236f36c9'){sessionStorage.setItem('atlasOwner','1');location.href='admin.html';}
+    else alert('Incorrect owner login.');
+  });
+}
+</script></body></html>
