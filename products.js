@@ -10,3 +10,9 @@ window.ATLAS_PRODUCTS = [
  {id:'atlas-09',title:'Complete Standing Exercise Atlas',price:149,size:'36 x 24 in original',image:'atlas-09.webp',description:'50 visual standing movements with form, progression and ranking.'},
  {id:'atlas-10',title:'TSX Market Kingdom',price:219,size:'96 x 48 in original',image:'atlas-10.webp',description:'Complete listed-issuer domain grouped by market-cap house and industry.'}
 ];
+
+window.ATLAS_SETTINGS = {
+  taxRate: 13,
+  shippingFlat: 25,
+  freeShippingOver: 0
+};
