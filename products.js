@@ -2,7 +2,7 @@ window.ATLAS_PRODUCTS = [
   {
     "id": "atlas-01",
     "title": "Canada Criminal Code - C-46 Section Atlas",
-    "price": 249,
+    "price": 250,
     "size": "34 x 24 in original",
     "image": "atlas-01.webp",
     "description": "Complete labeled Criminal Code section atlas."
@@ -10,7 +10,7 @@ window.ATLAS_PRODUCTS = [
   {
     "id": "atlas-02",
     "title": "Chatham City - The Surname Kingdom",
-    "price": 289,
+    "price": 245,
     "size": "96 x 48 in original",
     "image": "atlas-02.webp",
     "description": "A visual kingdom of Chatham surname frequency and houses."
@@ -18,7 +18,7 @@ window.ATLAS_PRODUCTS = [
   {
     "id": "atlas-03",
     "title": "Western University 2026 Course Atlas",
-    "price": 315,
+    "price": 280,
     "size": "34 x 24 in original",
     "image": "atlas-03.webp",
     "description": "Course atlas with possible degree progression."
@@ -26,7 +26,7 @@ window.ATLAS_PRODUCTS = [
   {
     "id": "atlas-04",
     "title": "Canada Income Kingdom - 2024",
-    "price": 295,
+    "price": 220,
     "size": "96 x 48 in original",
     "image": "atlas-04.webp",
     "description": "Canadian income realms organized into income houses."
@@ -34,7 +34,7 @@ window.ATLAS_PRODUCTS = [
   {
     "id": "atlas-05",
     "title": "Canadian Forces Operations Wall Chart",
-    "price": 210,
+    "price": 245,
     "size": "72 x 48 in original",
     "image": "atlas-05.webp",
     "description": "Chronological one-page Canadian Forces operations wall chart."
@@ -42,7 +42,7 @@ window.ATLAS_PRODUCTS = [
   {
     "id": "atlas-06",
     "title": "Canadian NOC Atlas",
-    "price": 219,
+    "price": 220,
     "size": "96 x 48 in original",
     "image": "atlas-06.webp",
     "description": "All 516 five-digit NOC unit groups organized by TEER/status structure."
@@ -50,7 +50,7 @@ window.ATLAS_PRODUCTS = [
   {
     "id": "atlas-07",
     "title": "The Clinical Kingdom",
-    "price": 418,
+    "price": 319,
     "size": "48 x 36 in original",
     "image": "atlas-07.webp",
     "description": "Clinical concept kingdom - physician-review prototype."
@@ -74,7 +74,7 @@ window.ATLAS_PRODUCTS = [
   {
     "id": "atlas-10",
     "title": "TSX Market Kingdom",
-    "price": 225,
+    "price": 219,
     "size": "96 x 48 in original",
     "image": "atlas-10.webp",
     "description": "Complete listed-issuer domain grouped by market-cap house and industry."
@@ -82,7 +82,7 @@ window.ATLAS_PRODUCTS = [
   {
     "id": "atlas-11",
     "title": "The Parasite & Virus Kingdom Atlas",
-    "price": 249,
+    "price": 310,
     "size": "48 x 72 in original",
     "image": "atlas-11.webp",
     "description": "A massive visual atlas mapping 100,000 parasite and virus observations across 12 biological kingdoms."
